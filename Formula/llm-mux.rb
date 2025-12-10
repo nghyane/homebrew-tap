@@ -5,21 +5,21 @@
 class LlmMux < Formula
   desc "Multi-provider LLM gateway with unified API"
   homepage "https://github.com/nghyane/llm-mux"
-  version "1.0.0"
+  version "6.5.31"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nghyane/llm-mux/releases/download/v1.0.0/llm-mux_1.0.0_darwin_amd64.tar.gz"
-      sha256 "790b8ad7bcaf9fdd60732a6b913b52e1dfb57f132ba635bd8a65db878e56f19c"
+      url "https://github.com/nghyane/llm-mux/releases/download/v6.5.31/llm-mux_6.5.31_darwin_amd64.tar.gz"
+      sha256 "dcea588dbcb4fb0d8d00a3bd6021a50c422d73e9691294c9f2eab80aaff6cfca"
 
       def install
         bin.install "llm-mux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nghyane/llm-mux/releases/download/v1.0.0/llm-mux_1.0.0_darwin_arm64.tar.gz"
-      sha256 "71f61d36b04b361661060b298ca189407d3870167e40788eacbf15c7db18666c"
+      url "https://github.com/nghyane/llm-mux/releases/download/v6.5.31/llm-mux_6.5.31_darwin_arm64.tar.gz"
+      sha256 "93dc9976abaa89f5e8dc11784838ffb7be68906195245dfbd60954c1e641de5b"
 
       def install
         bin.install "llm-mux"
@@ -29,15 +29,15 @@ class LlmMux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nghyane/llm-mux/releases/download/v1.0.0/llm-mux_1.0.0_linux_amd64.tar.gz"
-      sha256 "bee397eadca723062bf464cc5b1d641a81a94a9c0b91670ea0de4dac95f2cd8f"
+      url "https://github.com/nghyane/llm-mux/releases/download/v6.5.31/llm-mux_6.5.31_linux_amd64.tar.gz"
+      sha256 "2214e005cce70e9f31b3b0c1a0d42d68573eb8a98a85b0e8cc1bc3f6e5c3a08f"
       def install
         bin.install "llm-mux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nghyane/llm-mux/releases/download/v1.0.0/llm-mux_1.0.0_linux_arm64.tar.gz"
-      sha256 "fea4c011162aca09a62b678c13d6a848cfbeff466da87ba4ff2164eace08eef1"
+      url "https://github.com/nghyane/llm-mux/releases/download/v6.5.31/llm-mux_6.5.31_linux_arm64.tar.gz"
+      sha256 "4d4de6eeb8227a91c5e4a04254331f986553245bf2841b47c443d57253eb674b"
       def install
         bin.install "llm-mux"
       end
