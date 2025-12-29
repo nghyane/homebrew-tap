@@ -3,7 +3,7 @@ cask "llm-mux" do
   name "llm-mux"
   desc "Multi-provider LLM gateway with unified API"
   homepage "https://github.com/nghyane/llm-mux"
-  version "2.0.13"
+  version "2.0.14"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "llm-mux" do
   on_macos do
     on_intel do
       url "https://github.com/nghyane/llm-mux/releases/download/v#{version}/llm-mux_#{version}_darwin_amd64.tar.gz"
-      sha256 "24040674717d1b824e377e9c26e798f9192020844434d0eeb6f3b32ab9505250"
+      sha256 "898b316dec7dd3dc691734c2e9d544d3b27ab7230ba16d2d848853b8dd94be5d"
     end
     on_arm do
       url "https://github.com/nghyane/llm-mux/releases/download/v#{version}/llm-mux_#{version}_darwin_arm64.tar.gz"
-      sha256 "7d85bc6ac27c11499fe477600d2f4802f7585a343b10e2c1b734294ce2c30f61"
+      sha256 "ecef8cab70b07d2fcc5cd0b5a01e4c71398f5e512b186188abd51c0a3e2919c1"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/nghyane/llm-mux/releases/download/v#{version}/llm-mux_#{version}_linux_amd64.tar.gz"
-      sha256 "981c5549547ba35981d243b0ef3a8818d13b72b231fa0a9c2ba1708dd9c735a2"
+      sha256 "ebb4c92d4442ff67dc17b5d3843961a59c2bd6d511e20e2a2c174d7dfea4d570"
     end
     on_arm do
       url "https://github.com/nghyane/llm-mux/releases/download/v#{version}/llm-mux_#{version}_linux_arm64.tar.gz"
-      sha256 "a3d1f52a4bbc239fd3d57fe1102d7d67e5ebc1e9065fbf3b6eeaf74b540026e2"
+      sha256 "62cf971ee6e2c89a210e707f45af4de96a8f942b197c372861fa81bc2e9097b2"
     end
   end
 
